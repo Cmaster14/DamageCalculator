@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.mcm0046auburn.damagecalc.MainActivity$PlaceholderFragment">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/pokemon_name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/pokemon_nature"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText2"
+        android:entries="@array/IVs" />
+    <!-- <SeekBar
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:max="31"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Attack IV"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_toEndOf="@+id/editText" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner"
+        android:entries="@array/IVs"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Special Attack IV"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/spinner"
+        android:layout_toEndOf="@+id/editText" />
+
+    <!--<Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/spinner2"
+        android:entries="@array/EVs"/>-->
+    <SeekBar
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentStart="true"
+        android:max="252"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Attack EVs"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/spinner2"
+        android:layout_toEndOf="@+id/editText" />
+
+    <!--<Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner4"
+        android:layout_below="@+id/seekBar1"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/seekBar1"
+        android:entries="@array/EVs" />-->
+    <SeekBar
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:layout_below="@+id/seekBar1"
+        android:layout_alignParentStart="true"
+        android:max="252" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Special Attack EVs"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/seekBar1"
+        android:layout_toEndOf="@+id/editText" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner5"
+        android:layout_below="@+id/seekBar2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/seekBar2"
+        android:entries="@array/Levels" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Level"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/seekBar2"
+        android:layout_toEndOf="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="test seek"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/spinner5"
+        android:layout_toEndOf="@+id/editText" />
+
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/spinner5"
+        android:layout_alignParentStart="true"
+        android:max="100" />
+
+</RelativeLayout>
